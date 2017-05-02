@@ -49,7 +49,9 @@ We are now going to do the following steps:
   * After a good training session, you should get results that look like so:
   * <img src="https://cloud.githubusercontent.com/assets/27869008/25638818/7c13e08e-2f3e-11e7-9f08-5fcc028b2b59.png" width="600">
   * I also show the normalized training / validation likelihoods and accuracies for the duration of the session:
-  * 
+  * <img src="https://cloud.githubusercontent.com/assets/27869008/25638967/0e0bf242-2f3f-11e7-9f18-a23f61fae2f2.png" width="600">
+
+
 
 
 
