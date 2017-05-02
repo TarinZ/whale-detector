@@ -4,7 +4,11 @@ So, this repository is my PyTorch solution for the [Kaggle whale-detection chall
 
 It's a pretty cool problem that resonates with prior work I have done in underwater perception algorithm design - a freakishly hard problem I may add. (The speed of sound changes on you, multiple reflections from the environment, but probably the hardest of all being that it's hard to gather ground-truth). (<--- startup idea? :collision: ) 
 
-Anyway! My approach is to first transform the 1D acoustic time-domain signal into a 2D time-frequency representation via the Short-Time-Fourier-Transform (STFT). In this way, we break the signal down into it's constituent time-frequency energy cells, (which are now pixels), but more crucially, we get a representation that has distinct features across time and frequency that will be correlated with each other. This then makes it ripe for a Convolutional Neural Network (CNN) to chew into. 
+Anyway! My approach is to first transform the 1D acoustic time-domain signal into a 2D time-frequency representation via the Short-Time-Fourier-Transform (STFT). We do this in the following way:
+
+![](https://cloud.githubusercontent.com/assets/27869008/25634668/4a7963f4-2f30-11e7-9768-91a394611732.png)
+
+In this way, we break the signal down into it's constituent time-frequency energy cells, (which are now pixels), but more crucially, we get a representation that has distinct features across time and frequency that will be correlated with each other. This then makes it ripe for a Convolutional Neural Network (CNN) to chew into. 
 
 Here is what a whale-signal's STFT looks like:
 
