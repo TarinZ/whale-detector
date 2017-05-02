@@ -8,7 +8,7 @@ Anyway! My approach is to first transform the 1D acoustic time-domain signal int
 
 <img src="https://cloud.githubusercontent.com/assets/27869008/25636131/536fbc9c-2f35-11e7-9669-01e0d98e5d5c.png" width="300">
 
-In this way, we break the signal down into it's constituent time-frequency energy cells, (which are now pixels), but more crucially, we get a representation that has distinct features across time and frequency that will be correlated with each other. This then makes it ripe for a Convolutional Neural Network (CNN) to chew into. 
+(Where `K_F` is the raw number of STFT frequency bands, `n` is the discrete time index, `m` is the temporal index of each STFT pixel, `x[n]` the raw audio signal being transformed, and `k` representing the index of each STFT pixel's frequency). In this way, we break the signal down into it's constituent time-frequency energy cells, (which are now pixels), but more crucially, we get a representation that has distinct features across time and frequency that will be correlated with each other. This then makes it ripe for a Convolutional Neural Network (CNN) to chew into. 
 
 Here is what a whale-signal's STFT looks like:
 
