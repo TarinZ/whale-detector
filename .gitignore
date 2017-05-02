@@ -1,7 +1,11 @@
 
 # Data files
+*
+!*/
+!*.*
 *.npy
 
 # Compiled files
 *.pyc
+
 
