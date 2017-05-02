@@ -1,6 +1,6 @@
 # whale-detector
 
-So this repository is my PyTorch solution for Kaggle whale-detection challenge! The objective of this challenge was to basically do a binary classification (hence really a detection), on the existance of whale signals in the water. 
+So this repository is my PyTorch solution for [Kaggle whale-detection challenge](https://www.kaggle.com/c/whale-detection-challenge)! The objective of this challenge was to basically do a binary classification (hence really a detection), on the existance of whale signals in the water. 
 
 A power spectrogram of a whale signal is shown below:
 
