@@ -6,7 +6,7 @@ It's a pretty cool problem that resonates with prior work I have done in underwa
 
 Anyway! My approach is to first transform the 1D acoustic time-domain signal into a 2D time-frequency representation via the Short-Time-Fourier-Transform (STFT). We do this in the following way:
 
-![eq1](https://cloud.githubusercontent.com/assets/27869008/25635293/7c1a98e0-2f32-11e7-9c9d-fa0179143217.png | width = "100")
+![eq1](https://cloud.githubusercontent.com/assets/27869008/25635293/7c1a98e0-2f32-11e7-9c9d-fa0179143217.png width = "100")
 
 In this way, we break the signal down into it's constituent time-frequency energy cells, (which are now pixels), but more crucially, we get a representation that has distinct features across time and frequency that will be correlated with each other. This then makes it ripe for a Convolutional Neural Network (CNN) to chew into. 
 
