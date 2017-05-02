@@ -1,4 +1,4 @@
-# CNN+STFT based Whale Detection Algorithm
+# CNN (InceptionV1) + STFT based Whale Detection Algorithm
 
 So, this repository is my PyTorch solution for the [Kaggle whale-detection challenge](https://www.kaggle.com/c/whale-detection-challenge). The objective of this challenge was to basically do a binary classification, (hence really a detection), on the existance of whale signals in the water. 
 
@@ -50,6 +50,14 @@ We are now going to do the following steps:
   * <img src="https://cloud.githubusercontent.com/assets/27869008/25638818/7c13e08e-2f3e-11e7-9f08-5fcc028b2b59.png" width="600">
   * I also show the normalized training / validation likelihoods and accuracies for the duration of the session:
   * <img src="https://cloud.githubusercontent.com/assets/27869008/25638967/0e0bf242-2f3f-11e7-9f18-a23f61fae2f2.png" width="600">
+
+
+So wow! An AUC of 0.9669! Not too shabby! Can still be improved, but considering the data looks like this below, our InceptionV1-CNN isn't doing too bad either. :collision:
+
+<img src="https://cloud.githubusercontent.com/assets/27869008/25639248/049e3b60-2f40-11e7-9fc2-7269770f4b75.png" width="600">
+
+
+
 
 
 
