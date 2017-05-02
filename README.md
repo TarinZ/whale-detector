@@ -19,3 +19,7 @@ Similarly, here's what a signal's STFT looks like without any whale signal. (Ins
 ![Neg whale spectrogram](https://cloud.githubusercontent.com/assets/27869008/25631319/dc12b5c4-2f24-11e7-8545-7b58950efe99.png)
 
 It's actually interesting, because there are basically so many more ways in which a signal can manifest itself as *not* a whale signal, VS as actually being a whale signal. Does that mean we can also frame the problem as learning the manifold of whale-signals and simply do outlier analysis on that? Something to think about. :) 
+
+# Code Usage:
+
+Ok - let us now talk about how to use the code:
