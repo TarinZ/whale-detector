@@ -38,6 +38,9 @@ We are now going to do the following steps:
   * `python whaleDataCreatorNumpyToTorchTensors.py -numpyDataDir /Users/you/data/whaleData/processedData/ `
   * Here, the original numpy tensors are first split and normalized, and then saved off into PyTorch tensors. (The split percentages are able to be user defined, I set the defaults set 20% for validation and 10% test). The PyTorch tensors are saved in the same directory as above.
 * Run the CNN classifier!
+  * We are now ready to train the classifier! I have already designed an Inception-V1 CNN architecture, that can be loaded up automatically, and we can use this as so. The input dimensions are also guaranteed to be equal to the STFT image sizes here. At any rate, we do this like so:
+  * `python whaleClassifier.py -dataDirProcessed /Users/you/data/whaleData/processedData/ -g 0 -e 1 -lr 0.0002 -L2 0.01 -mb 4 -dp 0 -s 3 -dnn 'inceptionModuleV1_75x45'`
+  * The `g` term controls whether or not we want to use a GPU to trian, `e` controls the number of epochs we want to train over, `lr` is the learning rate, `L2` is the L2 penalization amount for regularization, `mb` is the minibatch size, (which will be double this as the training composes a mini-batch to have an equal number of positive and negative samples), `dp` controls data parallelism (moot without multiple GPUs, and is really just a flag on whether or not to use multiple GPUs), `s` controls when and how often we save the net weights and validation losses, (option `3` saves the best performing model), and finally, `-dnn` is a flag that controls which DNN architecture we want to use. In this way, you can write your own DNN arch, and then simply call it by whatever name you give it for actual use. (I did this after I got tired of hard-coding every single DNN I designed). 
 * Evauluate the results. 
 
 
