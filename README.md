@@ -46,7 +46,9 @@ We are now going to do the following steps:
 * Evauluate the results! 
   * When your training is complete, you can then then run this script to give you automatically generated ROC and PR curves for your network's performance:
   * `python resultsVisualization.py -dataDirProcessed /Users/you/data/whaleData/processedData/ -netDir . `
-  * This will then ostensinly give you results that look like so, (depending on your training session):
+  * After a good training session, you should get results that look like so:
+  * <img src="https://cloud.githubusercontent.com/assets/27869008/25638818/7c13e08e-2f3e-11e7-9f08-5fcc028b2b59.png" width="600">
+  * I also show the normalized training / validation likelihoods and accuracies for the duration of the session:
   * 
 
 
