@@ -41,7 +41,10 @@ We are now going to do the following steps:
   * We are now ready to train the classifier! I have already designed an Inception-V1 CNN architecture, that can be loaded up automatically, and we can use this as so. The input dimensions are also guaranteed to be equal to the STFT image sizes here. At any rate, we do this like so:
   * `python whaleClassifier.py -dataDirProcessed /Users/you/data/whaleData/processedData/ -g 0 -e 1 -lr 0.0002 -L2 0.01 -mb 4 -dp 0 -s 3 -dnn 'inceptionModuleV1_75x45'`
   * The `g` term controls whether or not we want to use a GPU to trian, `e` controls the number of epochs we want to train over, `lr` is the learning rate, `L2` is the L2 penalization amount for regularization, `mb` is the minibatch size, (which will be double this as the training composes a mini-batch to have an equal number of positive and negative samples), `dp` controls data parallelism (moot without multiple GPUs, and is really just a flag on whether or not to use multiple GPUs), `s` controls when and how often we save the net weights and validation losses, (option `3` saves the best performing model), and finally, `-dnn` is a flag that controls which DNN architecture we want to use. In this way, you can write your own DNN arch, and then simply call it by whatever name you give it for actual use. (I did this after I got tired of hard-coding every single DNN I designed). 
+  * If everything is running smoothly, you should see something like this, as training progresses: <img src="https://cloud.githubusercontent.com/assets/27869008/25638321/dd562a16-2f3c-11e7-99c5-e1f0392bbdf7.png" width="600">
+  * The "time" here just shows how long it takes between the reporting of each validation score. (Since I ran this on my CPU, it's 30 seconds / report, but expect this to be at least an order of magnitude faster on a respectable GPU).
 * Evauluate the results. 
+
 
 
 
