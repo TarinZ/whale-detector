@@ -1,4 +1,4 @@
-# whale-detector
+# CNN+STFT based Whale Detection
 
 So, this repository is my PyTorch solution for the [Kaggle whale-detection challenge](https://www.kaggle.com/c/whale-detection-challenge). The objective of this challenge was to basically do a binary classification, (hence really a detection), on the existance of whale signals in the water. 
 
